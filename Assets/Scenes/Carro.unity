@@ -546,7 +546,6 @@ MonoBehaviour:
   iaCarro: {fileID: 11400000, guid: d3c35d2e02c33e34996761ae23a06f3c, type: 2}
   periodo: 0.5
   compitiendo: 0
-  frames: 10
 --- !u!54 &354134450
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2816,7 +2815,7 @@ MonoBehaviour:
   RRWTireSkid: {fileID: 2088855624}
   useUI: 0
   carSpeedText: {fileID: 0}
-  useSounds: 0
+  useSounds: 1
   carEngineSound: {fileID: 1313992892}
   tireScreechSound: {fileID: 566493240}
   useTouchControls: 0
