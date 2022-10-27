@@ -8,11 +8,14 @@ public class CamaraControl : MonoBehaviour
     public Transform objetivoPosicion;
     public float velocidad;
    
-
+    private void Start()
+    {
+        objetivoPosicion.LookAt(objetivoVista);
+    }
     // Update is called once per frame
     void Update()
     {
         transform.position = Vector3.Lerp(transform.position, objetivoPosicion.position, Time.deltaTime * velocidad);
-        transform.LookAt(objetivoVista);
+        transform.rotation= Quaternion.Lerp(transform.rotation, objetivoPosicion.rotation, Time.deltaTime*velocidad);
     }
 }

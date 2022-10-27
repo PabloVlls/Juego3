@@ -7,8 +7,13 @@ public class IACarroEnemigo : MonoBehaviour
     public IACarro iaCarro;
     public float periodo;
     public bool compitiendo = false;
-    public float frames=10f;
-    // Update is called once per frame
+    int posicionLista = 0;
+    float t = 0;
+
+    private void Start()
+    {
+        transform.position = iaCarro.puntos[0].posicion;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
@@ -16,37 +21,34 @@ public class IACarroEnemigo : MonoBehaviour
             if (!compitiendo)
             {
                 compitiendo = true;
-                StartCoroutine(Grabar());
+                posicionLista = 0;
             }
             else
             {
                 compitiendo = false;
             }
         }
-    }
 
-    IEnumerator Grabar()
-    {
-        int posicionLista = 0;
-        while (compitiendo)
+        if (compitiendo && posicionLista < iaCarro.puntos.Count-1)
         {
-            PuntoMapa pm = new PuntoMapa();
-            for (int i = 0; i < frames; i++)
-            {
-                transform.position = Vector3.Lerp
-                (iaCarro.puntos[posicionLista].posicion, 
-                iaCarro.puntos[posicionLista + 1].posicion, 
-                (float)i/ (frames)
-                );
+            t += Time.deltaTime;
+            transform.position = Vector3.Lerp
+            (iaCarro.puntos[posicionLista].posicion,
+            iaCarro.puntos[posicionLista + 1].posicion,
+            t/periodo
+            );
 
-                transform.rotation = Quaternion.Lerp
-                (iaCarro.puntos[posicionLista].rotacion,
-                iaCarro.puntos[posicionLista + 1].rotacion,
-                (float)i / (frames)
-                );
-                yield return new WaitForSeconds(periodo/frames);
+            transform.rotation = Quaternion.Lerp
+            (iaCarro.puntos[posicionLista].rotacion,
+            iaCarro.puntos[posicionLista + 1].rotacion,
+            t/periodo
+            );
+            
+            if (t >= periodo)
+            {
+                posicionLista++;
+                t = 0;
             }
-             posicionLista++;
         }
     }
 }
