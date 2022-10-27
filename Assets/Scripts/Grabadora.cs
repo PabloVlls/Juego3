@@ -27,19 +27,20 @@ public class Grabadora : MonoBehaviour
                 grabando = false;
             }
         }
-
-        IEnumerator Grabar()
-        {
-            while (grabando)
-            {
-                PuntoMapa pm = new PuntoMapa();
-                pm.posicion = transform.position;
-                pm.rotacion = transform.rotation;
-                puntos.Add(pm);
-                yield return new WaitForSeconds(periodo);
-            }
-        }
     }
+
+    IEnumerator Grabar()
+    {
+         while (grabando)
+         {
+            PuntoMapa pm = new PuntoMapa();
+            pm.posicion = transform.position;
+            pm.rotacion = transform.rotation;
+            puntos.Add(pm);
+            yield return new WaitForSeconds(periodo);
+         }
+    }
+    
 }
 
 [System.Serializable]
@@ -50,8 +51,3 @@ public class PuntoMapa
     public Quaternion rotacion;
 }
 
-[CreateAssetMenu(fileName ="IA Carro", menuName ="2DCilantro/IA Carro")]
-public class IACarro: ScriptableObject
-{
-    public List<PuntoMapa> puntos = new List<PuntoMapa>();
-}
