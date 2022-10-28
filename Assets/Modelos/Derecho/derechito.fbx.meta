@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 2511f4695fb2a98448fd2bdb3a6391bc
+guid: 8a0dc30ec10f84f4796ddd37b30d4bf8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: ccd94fa6c0c81ef47a490a22073c13cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 18f2dc60b8d9f864c9bed3676414bcf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: 25262591a15297a45ae1b268ff7b51e6, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: derecho
+    second: {fileID: 2800000, guid: 206234e40cf5ede4dbc857a90305ef6a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
