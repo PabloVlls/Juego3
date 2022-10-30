@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class PrroPrueba : MonoBehaviour
 {
-    public UnityEngine.UI.Image PopupDerImg;
-    public UnityEngine.UI.Image PopupDerBut;
+    public bool derEnable = false; 
+    public UnityEngine.UI.Image popupDerImg;
+    public UnityEngine.UI.Image popupDerBut;
+
     // Start is called before the first frame update
     void Start()
     {
-        PopupDerImg.enabled = !PopupDerImg.enabled;
-        PopupDerBut.enabled = !PopupDerBut.enabled;
+        popupDerImg.enabled = !popupDerImg.enabled;
+        popupDerBut.enabled = !popupDerBut.enabled;
     }
 
     // Update is called once per frame
@@ -31,6 +33,9 @@ public class PrroPrueba : MonoBehaviour
         }
         if (other.CompareTag("Der"))
         {
+            derEnable = true;
+            popupDerImg.enabled = derEnable = true;
+            popupDerBut.enabled = derEnable = true;
             print("Der coll");
         }
     }

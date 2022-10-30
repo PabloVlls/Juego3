@@ -2078,7 +2078,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662230813}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.76, y: 2.11, z: -3.57}
+  m_LocalPosition: {x: -2.85, y: 8.57, z: 5.04}
   m_LocalScale: {x: 0.42581123, y: 0.42581123, z: 0.42581123}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2178,8 +2178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b079a44e571978d428172a7e70e4f1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PopupDerImg: {fileID: 528131055}
-  PopupDerBut: {fileID: 1780245424}
+  derEnable: 0
+  popupDerImg: {fileID: 528131055}
+  popupDerBut: {fileID: 1780245424}
 --- !u!1 &1751106695
 GameObject:
   m_ObjectHideFlags: 0
