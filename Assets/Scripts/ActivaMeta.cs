@@ -10,9 +10,12 @@ public class ActivaMeta : MonoBehaviour
     {
         finalCarrera = FindObjectOfType<FinalCarrera>();
     }
-    private void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        Debug.Log("Meta");
+        if (!finalCarrera.llegada)
+        {
+            finalCarrera.llegada = true;
+        }
     }
-
 }
