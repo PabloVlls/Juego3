@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class FinalCarrera : MonoBehaviour
 {
-    public bool puto = false;
-    private void OnTriggerEnter(Collider other)
+    public Collider activaMeta;
+
+    private void Start()
     {
-        if (other.tag == "Prota")
+        activaMeta = GetComponent<BoxCollider>();
+        activaMeta.enabled = !activaMeta.enabled;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
         {
-            puto = true;
+            Debug.Log("Meta");
         }
     }
 }
