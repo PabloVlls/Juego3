@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class FinalCarrera : MonoBehaviour
 {
+    public bool puto = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Prota")
         {
-            Debug.Log("SapoPrro");
+            puto = true;
         }
     }
 }
