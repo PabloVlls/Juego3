@@ -46,6 +46,11 @@ public class SceneManagement : MonoBehaviour
 
     public void SalirNivel()
     {
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    public void ScenaDerecho()
+    {
         SceneManager.LoadScene("Carrera");
     }
 
@@ -54,4 +59,6 @@ public class SceneManagement : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Time.timeScale = 0;
     }
+
+
 }
