@@ -7,6 +7,7 @@ public class SceneManagement : MonoBehaviour
 {
     public GameObject panelReinicio;
     public GameObject panelSalir;
+    public GameObject panelPausa;
     public FinalCarrera finalCarrera;
     public IACarroEnemigo iA;
     
@@ -16,6 +17,7 @@ public class SceneManagement : MonoBehaviour
         iA = FindObjectOfType<IACarroEnemigo>();
         panelReinicio.SetActive(false);
         panelSalir.SetActive(false);
+        panelPausa.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -54,11 +56,24 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("Carrera");
     }
 
+    public void Pausar()
+    {
+        panelPausa.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void DesPausar()
+    {
+        panelPausa.SetActive(false);
+        Time.timeScale = 1;
+    }
+
     IEnumerator PausarJuego()
     {
         yield return new WaitForSeconds(3f);
         Time.timeScale = 0;
     }
+
 
 
 }
