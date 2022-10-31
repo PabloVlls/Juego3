@@ -14,7 +14,7 @@ public class FinalCarrera : MonoBehaviour
     private void Start()
     {
         activaMeta = GetComponent<BoxCollider>();
-        activaMeta.enabled = !activaMeta.enabled;
+        activaMeta.enabled = false;
     }
 
     private void Update()
@@ -43,7 +43,7 @@ public class FinalCarrera : MonoBehaviour
     {
         if(llegada)
         {
-            activaMeta.enabled = !activaMeta.enabled;
+            activaMeta.enabled = true;
         }
     }
 
