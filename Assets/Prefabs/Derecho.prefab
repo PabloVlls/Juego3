@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 897355835540750498}
   m_Layer: 0
   m_Name: Derecho
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 5460943929890856761}
   m_Layer: 0
   m_Name: DetectorLlegada
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

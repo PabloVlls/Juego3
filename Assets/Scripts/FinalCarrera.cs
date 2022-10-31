@@ -8,12 +8,13 @@ public class FinalCarrera : MonoBehaviour
     public Collider activaMeta;
     public bool llegada = false;
     public bool final = false;
+    public bool gane = false;
+    public bool perdi = false;
 
     private void Start()
     {
         activaMeta = GetComponent<BoxCollider>();
         activaMeta.enabled = !activaMeta.enabled;
-        
     }
 
     private void Update()
@@ -27,11 +28,13 @@ public class FinalCarrera : MonoBehaviour
         {
             Debug.Log("Meta2");
             final = true;
+            gane = true;
         }
         else if (other.gameObject.CompareTag("Enemy") && llegada == true)
         {
             Debug.Log("Meta3");
             final = true;
+            perdi = true;
         }
 
     }
