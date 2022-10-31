@@ -7,27 +7,17 @@ public class IACarroEnemigo : MonoBehaviour
     public IACarro iaCarro;
     public float periodo;
     public bool compitiendo = false;
-    int posicionLista = 0;
+    public int posicionLista = 0;
     float t = 0;
 
     private void Start()
     {
         transform.position = iaCarro.puntos[0].posicion;
+        compitiendo = true;
+        posicionLista = 0;
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (!compitiendo)
-            {
-                compitiendo = true;
-                posicionLista = 0;
-            }
-            else
-            {
-                compitiendo = false;
-            }
-        }
 
         if (compitiendo && posicionLista < iaCarro.puntos.Count-1)
         {

@@ -8,10 +8,12 @@ public class SceneManagement : MonoBehaviour
     public GameObject panelReinicio;
     public GameObject panelSalir;
     public FinalCarrera finalCarrera;
+    public IACarroEnemigo iA;
     
     void Start()
     {
         finalCarrera = FindObjectOfType<FinalCarrera>();
+        iA = FindObjectOfType<IACarroEnemigo>();
         panelReinicio.SetActive(false);
         panelSalir.SetActive(false);
         Time.timeScale = 1;
@@ -24,11 +26,15 @@ public class SceneManagement : MonoBehaviour
         {
             panelSalir.SetActive(true);
             StartCoroutine(PausarJuego());
+            /*iA.compitiendo = false;
+            iA.posicionLista = 0;*/
         }
         else if (finalCarrera.final && finalCarrera.perdi)
         {
             panelReinicio.SetActive(true);
             StartCoroutine(PausarJuego());
+            /*iA.compitiendo = false;
+            iA.posicionLista = 0;*/
         }
 
     }
