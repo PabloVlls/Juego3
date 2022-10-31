@@ -7,6 +7,7 @@ TagManager:
   - Ing
   - Der
   - Com
+  - Enemy
   layers:
   - Default
   - TransparentFX
