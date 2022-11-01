@@ -8,6 +8,7 @@ public class SceneManagement : MonoBehaviour
     public GameObject panelReinicio;
     public GameObject panelSalir;
     public GameObject panelPausa;
+    public GameObject panelInicio;
     public FinalCarrera finalCarrera;
     public IACarroEnemigo iA;
     
@@ -18,7 +19,8 @@ public class SceneManagement : MonoBehaviour
         panelReinicio.SetActive(false);
         panelSalir.SetActive(false);
         panelPausa.SetActive(false);
-        Time.timeScale = 1;
+        panelInicio.SetActive(true);
+        Time.timeScale = 0;
     }
 
     // Update is called once per frame
@@ -28,17 +30,19 @@ public class SceneManagement : MonoBehaviour
         {
             panelSalir.SetActive(true);
             StartCoroutine(PausarJuego());
-            /*iA.compitiendo = false;
-            iA.posicionLista = 0;*/
         }
         else if (finalCarrera.final && finalCarrera.perdi)
         {
             panelReinicio.SetActive(true);
             StartCoroutine(PausarJuego());
-            /*iA.compitiendo = false;
-            iA.posicionLista = 0;*/
         }
 
+    }
+
+    public void Inicio()
+    {
+        panelInicio.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void ReiniciarNivel()
@@ -73,7 +77,5 @@ public class SceneManagement : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Time.timeScale = 0;
     }
-
-
 
 }
