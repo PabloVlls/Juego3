@@ -43,7 +43,7 @@ public class Gps : MonoBehaviour
                 personaje.posicion.x = Input.location.lastData.latitude;
                 personaje.posicion.z = Input.location.lastData.longitude;
 
-                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(0.5f);
             }
             
         }
