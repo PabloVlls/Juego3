@@ -1188,6 +1188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+--- !u!1 &399592662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4597129196982652262, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+  m_PrefabInstance: {fileID: 399592661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &421277294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,6 +2353,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+--- !u!1 &710059469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4597129196982652262, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+  m_PrefabInstance: {fileID: 710059468}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &713734349 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4121091811543137509, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
@@ -2375,7 +2385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &716878061
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3560,6 +3570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+--- !u!1 &1182668173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4597129196982652262, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+  m_PrefabInstance: {fileID: 1182668172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1185152707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6536,6 +6551,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+--- !u!1 &1789977540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4597129196982652262, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+  m_PrefabInstance: {fileID: 1789977539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1791844732
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,7 +6919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1826267007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7684,6 +7704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+--- !u!1 &1998241189 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4597129196982652262, guid: ba7adce0955ba9047b407c0d6b28fdd1, type: 3}
+  m_PrefabInstance: {fileID: 1998241188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2008760744
 GameObject:
   m_ObjectHideFlags: 0
@@ -12538,15 +12563,15 @@ MonoBehaviour:
   RRWTireSkid: {fileID: 1457381583}
   useUI: 0
   carSpeedText: {fileID: 0}
-  useSounds: 0
+  useSounds: 1
   carEngineSound: {fileID: 7656743019966006109}
   tireScreechSound: {fileID: 7656743021185723623}
-  useTouchControls: 0
-  throttleButton: {fileID: 0}
-  reverseButton: {fileID: 0}
-  turnRightButton: {fileID: 0}
-  turnLeftButton: {fileID: 0}
-  handbrakeButton: {fileID: 0}
+  useTouchControls: 1
+  throttleButton: {fileID: 1998241189}
+  reverseButton: {fileID: 1789977540}
+  turnRightButton: {fileID: 710059469}
+  turnLeftButton: {fileID: 1182668173}
+  handbrakeButton: {fileID: 399592662}
   carSpeed: 0
   isDrifting: 0
   isTractionLocked: 0

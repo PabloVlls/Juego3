@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollDer : MonoBehaviour
+public class CollCom : MonoBehaviour
 {
-    public bool enable = false; 
+    public bool enable = false;
     public UnityEngine.UI.Image popupImg;
     public UnityEngine.UI.Image popupBut;
     public UnityEngine.UI.Button popupBut2;
