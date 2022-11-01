@@ -73,6 +73,14 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("Carrera");
     }
 
+    public void ScenaCom()
+    {
+        SceneManager.LoadScene("CarreraCom");
+    }public void ScenaIng()
+    {
+        SceneManager.LoadScene("CarreraIng");
+    }
+
     public void Pausar()
     {
         panelPausa.SetActive(true);

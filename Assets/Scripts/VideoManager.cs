@@ -10,17 +10,26 @@ public class VideoManager : MonoBehaviour
     void Start()
     {
         panelVideo.SetActive(true);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        StartCoroutine(FinVideo());
     }
 
     public void Saltar()
     {
         panelVideo.SetActive(false);
         Video.SetActive(false);
+    }
+
+    IEnumerator FinVideo()
+    {
+        yield return new WaitForSeconds(42f);
+        panelVideo.SetActive(false);
+        Video.SetActive(false);
+
     }
 }

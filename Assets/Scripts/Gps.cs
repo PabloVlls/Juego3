@@ -7,6 +7,8 @@ public class Gps : MonoBehaviour
 {
     public Text texto;
     public Ubicador personaje;
+
+    
     IEnumerator Start()
     {
 
@@ -42,8 +44,8 @@ public class Gps : MonoBehaviour
                 texto.text = Input.location.lastData.longitude + "\n" + Input.location.lastData.latitude;
                 personaje.posicion.x = Input.location.lastData.latitude;
                 personaje.posicion.z = Input.location.lastData.longitude;
-
-                yield return new WaitForSeconds(0.5f);
+                texto.text = Input.location.lastData.latitude + " - " + Input.location.lastData.longitude;
+                yield return new WaitForSeconds(3f);
             }
             
         }
