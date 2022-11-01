@@ -9,6 +9,7 @@ public class SceneManagement : MonoBehaviour
     public GameObject panelSalir;
     public GameObject panelPausa;
     public GameObject panelInicio;
+    public GameObject Botones;
     public FinalCarrera finalCarrera;
     public IACarroEnemigo iA;
     
@@ -20,6 +21,7 @@ public class SceneManagement : MonoBehaviour
         panelSalir.SetActive(false);
         panelPausa.SetActive(false);
         panelInicio.SetActive(true);
+        Botones.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -42,6 +44,7 @@ public class SceneManagement : MonoBehaviour
     public void Inicio()
     {
         panelInicio.SetActive(false);
+        Botones.SetActive(true);
         Time.timeScale = 1;
     }
 
