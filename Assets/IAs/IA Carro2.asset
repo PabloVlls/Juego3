@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e61fd4b83c4a96478afe21b66143291, type: 3}
-  m_Name: IA Carro
+  m_Script: {fileID: 11500000, guid: 45034e5ccbb865c42b040b7f34954cc7, type: 3}
+  m_Name: IA Carro2
   m_EditorClassIdentifier: 
   puntos:
   - posicion: {x: -2.7900953, y: -1.8421851, z: -0.58301044}

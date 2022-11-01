@@ -1986,7 +1986,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2106202768}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: ReiniciarNivel
+        m_MethodName: ReiniciarNivelIng
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7477,7 +7477,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2106202768}
         m_TargetAssemblyTypeName: SceneManagement, Assembly-CSharp
-        m_MethodName: ReiniciarNivel
+        m_MethodName: ReiniciarNivelIng
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8167,7 +8167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnEnemy: {fileID: 2008760746}
-  carroEnemy: {fileID: 897355835540750505, guid: ee1b5ef7c3c69ed43a33d9392be291ee, type: 3}
+  carroEnemy: {fileID: 5017344920759215911, guid: 9e0d71613d6b2ed4facbd9270eb63f7c, type: 3}
 --- !u!4 &2008760746
 Transform:
   m_ObjectHideFlags: 0
@@ -8454,7 +8454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106202763}
   m_LocalRotation: {x: 0.52082133, y: -0.0520411, z: 0.13598722, w: 0.8411566}
-  m_LocalPosition: {x: 0.84, y: 10.2, z: -3.4}
+  m_LocalPosition: {x: -0.18, y: 10.2, z: -3.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12797,7 +12797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5931946135522815694}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -2.79, y: -1.89, z: 0.05744648}
+  m_LocalPosition: {x: 3.6, y: -1.89, z: -1.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
