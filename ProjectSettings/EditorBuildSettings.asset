@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Carrera.unity
     guid: 2cd00480585028844a30b6e198440344
+  - enabled: 1
+    path: Assets/Scenes/CarreraCom.unity
+    guid: 404a7b797d2861444b5702ddf45e25b2
+  - enabled: 1
+    path: Assets/Scenes/CarreraIng.unity
+    guid: 5f1acdcf45a91a64c83baea5b2cac0ab
   m_configObjects: {}
