@@ -58,6 +58,11 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("CarreraIng");
     }
 
+    public void ReiniciarNivelCom()
+    {
+        SceneManager.LoadScene("CarreraCom");
+    }
+
     public void SalirNivel()
     {
         SceneManager.LoadScene("SampleScene");
